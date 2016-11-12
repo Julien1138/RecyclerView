@@ -4,37 +4,50 @@
     android:layout_height="wrap_content"
     android:paddingBottom="5dp"
     android:background="?android:attr/selectableItemBackground"
-    android:orientation="vertical">
+    android:orientation="horizontal">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Album title"
-        android:id="@+id/album_item_title" />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/album_item_icon"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:orientation="vertical">
 
         <TextView
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="start"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Departure date"
-            android:id="@+id/album_item_departure_date" />
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Album title"
+            android:id="@+id/album_item_title" />
 
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="end"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Duration"
-            android:id="@+id/album_item_duration" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Departure date"
+                android:id="@+id/album_item_departure_date" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Duration"
+                android:id="@+id/album_item_duration" />
+
+        </LinearLayout>
     </LinearLayout>
 </LinearLayout>
