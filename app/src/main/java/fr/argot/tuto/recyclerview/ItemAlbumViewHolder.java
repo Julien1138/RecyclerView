@@ -35,7 +35,7 @@ public class ItemAlbumViewHolder extends RecyclerView.ViewHolder {
         this.view = itemView;
     }
 
-    // Les 3 setters pour chacun des 3 chanmps texte de la vue
+    // Les 3 setters pour chacun des 3 champs texte de la vue
     public void setTitle(String myTitle) {
         this.mTitle.setText(myTitle);
 
